@@ -26,3 +26,7 @@
   line-height: 28px;
   text-align: center;
 }
+
+#headerButton {
+  margin-right: 24px;
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+#toolbar {
+  display: flex;
+  width: 375px;
+  height: 48px;
+  color: #181E25;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#logoPlaceholder {
+  display: flex;
+  align-items: center;
+  width: 114px;
+  height: 48px;
+  margin-left: 12px;
+}
+
+#logoText {
+  height: 28px;
+  width: 90px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+}

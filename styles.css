@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+#toolbar {
+  position: absolute;
+  display: flex;
+  width: 375px;
+  height: 48px;
+  color: #181e25;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#logoPlaceholder {
+  display: flex;
+  align-items: center;
+  width: 114px;
+  height: 48px;
+  margin-left: 12px;
+}
+
+#logoText {
+  height: 28px;
+  width: 90px;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  color: #181e25;
+  text-decoration: none;
+}
+
+#headerButton {
+  margin-right: 24px;
+}
+
+#headline {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  height: 726px;
+  margin-top: 48px;
+  gap: 58px;
+  background-image: url('Images/bgMain.png');
+  background-repeat: no-repeat;
+}
+
+#primaryText {
+  width: 327px;
+  height: 192px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 64px;
+}
+
+.primaryText {
+  font-family: Inter, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#primaryName {
+  height: 96px;
+  margin: 0.1px;
+  color: #172b4d;
+}
+
+#primaryJob {
+  height: 96px;
+  margin: 0.1px;
+  color: #36b37e;
+}
+
+#supportingText {
+  width: 327px;
+  height: 165px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+  margin: 0.1px;
+}
+
+#socialMediaIcons {
+  display: flex;
+  width: 170.17px;
+  height: 20px;
+  margin: 0.1px;
+  justify-content: space-between;
+  align-items: center;
+}

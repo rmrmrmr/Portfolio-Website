@@ -26,6 +26,8 @@
   font-weight: 600;
   line-height: 28px;
   text-align: center;
+  color: #181e25;
+  text-decoration: none;
 }
 
 #headerButton {
@@ -91,4 +93,5 @@
   height: 20px;
   margin: 0.1px;
   justify-content: space-between;
+  align-items: center;
 }

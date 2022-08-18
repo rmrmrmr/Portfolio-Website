@@ -83,3 +83,11 @@
   color: #172b4d;
   margin: 10px;
 }
+
+#socialMediaIcons {
+  display: flex;
+  width: 170.17px;
+  height: 20px;
+  margin: 0px;
+  justify-content: space-between;
+}

@@ -5,7 +5,7 @@
   display: flex;
   width: 375px;
   height: 48px;
-  color: #181E25;
+  color: #181e25;
   justify-content: space-between;
   align-content: center;
 }
@@ -33,7 +33,7 @@
 }
 
 #headline {
-  position:absolute;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,13 +63,13 @@
 
 #primaryName {
   height: 96px;
-  margin: 0px;
+  margin: 0.1px;
   color: #172b4d;
 }
 
 #primaryJob {
   height: 96px;
-  margin: 0px;
+  margin: 0.1px;
   color: #36b37e;
 }
 
@@ -82,13 +82,13 @@
   line-height: 28px;
   text-align: center;
   color: #172b4d;
-  margin: 0px;
+  margin: 0.1px;
 }
 
 #socialMediaIcons {
   display: flex;
   width: 170.17px;
   height: 20px;
-  margin: 0px;
+  margin: 0.1px;
   justify-content: space-between;
 }

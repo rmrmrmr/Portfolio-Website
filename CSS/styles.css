@@ -63,7 +63,6 @@
   height: 96px;
   margin: 0px;
   color: #172b4d;
-
 }
 
 #primaryJob {
@@ -74,14 +73,14 @@
 
 #supportingText {
   width: 327px;
-  height: 192px;
+  height: 165px;
   font-family: Inter;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
   color: #172b4d;
-  margin: 10px;
+  margin: 0px;
 }
 
 #socialMediaIcons {

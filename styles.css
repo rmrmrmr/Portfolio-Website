@@ -21,7 +21,7 @@
 #logoText {
   height: 28px;
   width: 90px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
@@ -55,7 +55,7 @@
 }
 
 .primaryText {
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 40px;
   font-weight: 700;
   text-align: center;
@@ -76,7 +76,7 @@
 #supportingText {
   width: 327px;
   height: 165px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -92,3 +92,4 @@
   margin: 0.1px;
   justify-content: space-between;
 }
+

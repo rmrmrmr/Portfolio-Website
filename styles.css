@@ -138,7 +138,7 @@ ul {
   margin-top: 855px;
   display: grid;
   grid-template-columns: 375px;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: 536px repeat(4, 1fr) 566px;
   min-height: fit-content;
 }
 
@@ -171,7 +171,7 @@ ul {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .projectName {
@@ -182,7 +182,7 @@ ul {
   font-size: 24px;
   text-align: center;
   line-height: 32px;
-  color: #3A4A42;
+  color: #3a4a42;
   gap: 0px;
   margin: 0;
 }

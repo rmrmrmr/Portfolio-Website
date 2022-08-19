@@ -31,7 +31,7 @@
 }
 
 #headerButton {
-  margin-right: 24px;
+  margin-left: 24px;
 }
 
 #headline {
@@ -40,9 +40,8 @@
   flex-direction: column;
   align-items: center;
   width: 375px;
-  height: 726px;
+  height: 800px;
   margin-top: 48px;
-  gap: 58px;
   background-image: url('Images/bgMain.png');
   background-repeat: no-repeat;
 }
@@ -65,13 +64,13 @@
 
 #primaryName {
   height: 96px;
-  margin: 0.1px;
+  margin: 0;
   color: #172b4d;
 }
 
 #primaryJob {
   height: 96px;
-  margin: 0.1px;
+  margin: 0;
   color: #36b37e;
 }
 
@@ -84,14 +83,135 @@
   line-height: 28px;
   text-align: center;
   color: #172b4d;
-  margin: 0.1px;
+  margin-top: 58px;
+  margin-bottom: 0;
 }
 
 #socialMediaIcons {
   display: flex;
   width: 170.17px;
   height: 20px;
-  margin: 0.1px;
+  margin: 0;
   justify-content: space-between;
   align-items: center;
+  margin-top: 58px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#actionButtonPlaceholder {
+  margin-top: 62px;
+}
+
+#recentWorksHeader {
+  margin-top: 22px;
+  height: 125px;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+}
+
+#rWrksTitle {
+  height: 97px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #172b4d;
+}
+
+#indicatorRW {
+  height: 4px;
+  width: 48px;
+  align-self: center;
+  margin-top: 24px;
+}
+
+#recentWorks {
+  position: absolute;
+  margin-top: 855px;
+  display: grid;
+  grid-template-columns: 375px;
+  grid-template-rows: repeat(6, 1fr);
+  min-height: fit-content;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 474px;
+  width: 327px;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  justify-self: center;
+  margin-top: 24px;
+  background-color: #ebf0ee;
+}
+
+#card1 {
+  margin-top: 62px;
+}
+
+.projectSnapshot {
+  height: 252px;
+  background-color: #ebf0ee;
+}
+
+.projectInfo {
+  height: 222px;
+  border-radius: 8px;
+  padding: 16px 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background-color: white;
+}
+
+.projectName {
+  width: 295px;
+  height: 57px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  line-height: 32px;
+  color: #3A4A42;
+  gap: 0px;
+  margin: 0;
+}
+
+.projectTagPH {
+  display: flex;
+  gap: 8px;
+  width: 295px;
+  justify-content: center;
+}
+
+.projectButtonPH {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.projectTag {
+  background-color: #ebf0ee;
+  border-style: none;
+  height: 32px;
+  width: max-content;
+  border-radius: 4px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  letter-spacing: 0.03em;
+  padding-left: 12px;
+  padding-right: 12px;
 }

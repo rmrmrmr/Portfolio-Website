@@ -258,7 +258,7 @@ ul {
   width: 375px;
   height: max-content;
   display: grid;
-  grid-template-columns: 1;a
+  grid-template-columns: 1;
   justify-content: center;
   background: url('Images/illustration-contact-form1.png') 100% 87% no-repeat;
 }

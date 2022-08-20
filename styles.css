@@ -260,6 +260,7 @@ cursor: pointer;
   display: grid;
   grid-template-columns: 1;
   justify-content: center;
+  background: url('Images/illustration-contact-form1.png') 100% 87% no-repeat;
 }
 
 #aboutMeHeader {
@@ -269,6 +270,8 @@ cursor: pointer;
   grid-template-columns: 1 1;
   grid-template-rows: 48px 189px 96px;
   justify-content: center;
+  background: url('Images/illustration- about me- mobile1.png') 0% 100%, url('Images/illustration 1- about me-mobile22.png') 100% -15%;
+  background-repeat: no-repeat;
 }
 
 .abtMeText {
@@ -423,4 +426,111 @@ cursor: pointer;
   margin-left: 113px;
 }
 
+#contactMeTextPH {
+  height: 363px;
+  width: 327px;
+  justify-self: center;
+}
+
+#contactMeText{
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+#contactMeBlankSpace {
+  margin-top: 35px;
+  height: 58px;
+  width: 327px;
+  justify-self: center;
+}
+
+#contactForm {
+  width: 327px;
+  height: 330px;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formBox1 {
+  height: 48px;
+  border-radius: 4px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+#commentsFormBox {
+  border-radius: 4px;
+  border-color: #60c095;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+  padding-bottom: 110px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+
+#submitFormBttn {
+  height: 120px;
+  width: 129px;
+  border-radius: 4px;
+  background-color: #36b37f;
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  border: none;
+  align-self: center;
+}
+
+#submitFormBttn:hover {
+  cursor: pointer;
+}
+
+#socialMediaIcons2 {
+  display: flex;
+  width: 170.17px;
+  height: 20px;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 46px;
+  justify-self: center;
+}
+
+#contactEmailPH {
+  width: 375px;
+  height: 189px;
+}
+
+#contactEmail {
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+}
+
+#bottomBar {
+  height: 147px;
+}
+
+#smI {
+  justify-self: center;
+}
+
+background: url('Images/illustration-contact-form1.png') 100% 0% no-repeat;
 

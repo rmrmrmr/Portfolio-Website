@@ -323,16 +323,16 @@ cursor: pointer;
   background-color: #ebf0ee;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 184px 32px 64px 72px;
+  grid-template-rows: 184px 32px 136px;
 }
 
-#langIconPH {
+.langIconPH {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#languagesText {
+.abtMeCardTitle {
   font-family: Inter;
   font-weight: 600;
   font-size: 24px;
@@ -342,15 +342,16 @@ cursor: pointer;
   margin: 0;
 }
 
-#languagesList {
+.abtMeCardList {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-left: 28px;
   margin-right: 28px;
 }
 
-#langText {
+.langButton {
   font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 12px;
@@ -359,10 +360,67 @@ cursor: pointer;
   color: #36b37e;
   background-color: #ffffff;
   height: 40px;
-  width: fit-content;
+  width: max-content;
   border: none;
   border-radius: 8px;
   padding: 12px;
   margin-top: 24px;
 }
+
+#frameworksCard {
+  width: 327px;
+  height: 352px;
+  justify-self: center;
+  margin-top: 24px;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 184px 32px 136px;
+}
+
+.secondOrderBttn {
+  margin-top: 8px;
+}
+
+#capybaraTag {
+  margin-left: 47px;
+}
+
+#seleniumTag {
+  margin-right: 47px;
+}
+
+#skillsCard {
+  width: 327px;
+  height: 352px;
+  justify-self: center;
+  margin-top: 24px;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 184px 32px 136px;
+}
+
+.abtMeCardList2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 303px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 0;
+  gap: 8px;
+}
+
+.secondOrderBttn2 {
+  margin-top: 0;
+}
+
+#terminalTag {
+  margin-left: 113px;
+}
+
 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 #toolbar {
   position: absolute;
@@ -216,6 +217,10 @@ ul {
   padding-right: 12px;
 }
 
+.projectTag:hover {
+cursor: pointer;
+}
+
 .seeProjectBttnPH {
   display: flex;
   align-items: center;
@@ -242,3 +247,122 @@ ul {
   font-size: 17px;
   color: #ffffff;
 }
+
+.seeProjectBttn:hover {
+  cursor: pointer;
+}
+
+#aboutMePage {
+  position: absolute;
+  top: 3957px;
+  width: 375px;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 1;
+  justify-content: center;
+}
+
+#aboutMeHeader {
+  height: 333px;
+  width: 351px;
+  display: grid;
+  grid-template-columns: 1 1;
+  grid-template-rows: 48px 189px 96px;
+  justify-content: center;
+}
+
+.abtMeText {
+  text-align: center;
+  margin: 0;
+}
+
+#abtMeTitle {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+#abtMeText {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+}
+
+#resumeBttn {
+  background-color: #36b37f;
+  color: white;
+  border-style: none;
+  border-radius: 4px;
+  width: 159px;
+  height: 48px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+#resumeBttn:hover {
+  cursor: pointer;
+}
+
+#resumeLink {
+  justify-self: center;
+  align-self:flex-end;
+}
+
+#languagesCard {
+  width: 327px;
+  height: 352px;
+  justify-self: center;
+  margin-top: 59px;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 184px 32px 64px 72px;
+}
+
+#langIconPH {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#languagesText {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+  text-align: center;
+  margin: 0;
+}
+
+#languagesList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+#langText {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+  background-color: #ffffff;
+  height: 40px;
+  width: fit-content;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 24px;
+}
+

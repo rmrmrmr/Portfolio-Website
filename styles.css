@@ -314,7 +314,7 @@ ul {
 
 #resumeLink {
   justify-self: center;
-  align-self:flex-end;
+  align-self: flex-end;
 }
 
 #languagesCard {
@@ -336,7 +336,7 @@ ul {
 }
 
 .abtMeCardTitle {
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -361,7 +361,7 @@ ul {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #36b37e;
-  background-color: #ffffff;
+  background-color: #fff;
   height: 40px;
   width: max-content;
   border: none;

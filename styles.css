@@ -181,6 +181,7 @@ ul {
   font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 24px;
+  display: block;
   text-align: center;
   line-height: 32px;
   color: #3a4a42;
@@ -231,6 +232,7 @@ ul {
 
 .seeProjectBttnLink {
   text-decoration: none;
+  color: #fff;
 }
 
 .seeProjectBttn {

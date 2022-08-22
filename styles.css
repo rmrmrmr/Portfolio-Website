@@ -297,7 +297,7 @@ ul {
   color: #42526e;
 }
 
-#resumeBttn {
+.resumeBttn {
   background-color: #36b37f;
   color: white;
   border-style: none;
@@ -308,6 +308,7 @@ ul {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+  text-decoration: none;
 }
 
 #resumeBttn:hover {
@@ -315,8 +316,20 @@ ul {
 }
 
 #resumeLink {
+  background-color: #36b37f;
+  color: white;
+  border-style: none;
+  border-radius: 4px;
+  width: 159px;
+  height: 48px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
   justify-self: center;
+  text-align: center;
   align-self: flex-end;
+  text-decoration: none;
 }
 
 #languagesCard {

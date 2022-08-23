@@ -488,15 +488,14 @@ ul {
   font-family: Inter, sans-serif;
   font-weight: 400;
   font-size: 15px;
+  height: 114px;
   line-height: 24px;
   color: #091e42;
-  padding-bottom: 110px;
-  padding-top: 4px;
   padding-left: 4px;
 }
 
 #submitFormBttn {
-  height: 120px;
+  height: 48px;
   width: 129px;
   border-radius: 4px;
   background-color: #36b37f;

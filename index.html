@@ -352,28 +352,28 @@
       </div>
       <p class="abtMeCardTitle">Skills</p>
       <ul class="abtMeCardList2">
-        <li>
+        <li class="skillsTag">
           <button type="button" class="langButton">
             Codekit
           </button>
         </li>
-        <li>
+        <li class="skillsTag">
           <button type="button" class="langButton">
             GitHub
           </button>
         </li>
-        <li>
+        <li class="skillsTag">
           <button type="button" class="langButton">
             Codepen
           </button>
         </li>
-        <li>
+        <li class="skillsTag">
           <button type="button" class="langButton">
             Gitlab
           </button>
         </li>
-        <li>
-          <button type="button" class="langButton secondOrderBttn2" id="terminalTag">
+        <li class="skillsTag">
+          <button type="button" class="langButton" id="terminalTag">
             Terminal
           </button>
         </li>
@@ -390,11 +390,11 @@
       </h2>
     </div>
     <div id="contactMeBlankSpace"></div>
-    <form id="contactForm">
-      <input type="text" name="FullName" id="nameFormBox" class="formBox1" placeholder="Full Name" maxlength="30">
-      <input type="text" name="EmailAddress" id="mailFormBox" class="formBox1" placeholder="Email Adress">
-      <input type="text" name="EmailAddress" id="commentsFormBox" class="formBox2" placeholder="Enter Text Here"
-        maxlength="500">
+    <form id="contactForm" action="https://formspree.io/f/moqbvdgn" method="post">
+      <input type="text" name="name" id="nameFormBox" class="formBox1" placeholder="Full Name" maxlength="30" required>
+      <input type="email" name="email" id="mailFormBox" class="formBox1" placeholder="Email Adress" required>
+      <textarea name="comments" id="commentsFormBox" class="formBox2"
+        maxlength="500" required>Any comments?</textarea>
       <button type="submit" id="submitFormBttn">Get in touch</button>
     </form>
     <div id="smI">

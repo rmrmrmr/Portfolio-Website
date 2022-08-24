@@ -262,7 +262,6 @@ ul {
   display: grid;
   grid-template-columns: 1;
   justify-content: center;
-  background: url('Images/illustration-contact-form1.png') 100% 87% no-repeat;
 }
 
 #aboutMeHeader {
@@ -364,9 +363,10 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-left: 28px;
   margin-right: 28px;
+  margin-top: 0px;
 }
 
 .langButton {
@@ -426,11 +426,8 @@ ul {
   flex-wrap: wrap;
   width: 303px;
   justify-content: space-between;
-  align-items: center;
-  margin-left: 12px;
-  margin-right: 12px;
-  margin-bottom: 0;
-  gap: 8px;
+  align-items: flex-start;
+  margin: 0 12px;
 }
 
 .secondOrderBttn2 {
@@ -439,6 +436,18 @@ ul {
 
 #terminalTag {
   margin-left: 113px;
+  margin-top: 0;
+}
+
+#contact {
+  position: absolute;
+  top: 5453px;
+  width: 375px;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 1;
+  justify-content: center;
+  background: url('Images/illustration-contact-form1.png') 100% 68% no-repeat;
 }
 
 #contactMeTextPH {

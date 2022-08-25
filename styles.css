@@ -35,6 +35,14 @@
   margin-left: 24px;
 }
 
+#navDesktop {
+  display: none;
+}
+
+#itemNav {
+  display: none;
+}
+
 #headline {
   position: relative;
   display: flex;
@@ -43,7 +51,7 @@
   width: 100%;
   height: max-content;
   background: url('Images/bgMain.png') no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #primaryText {
@@ -56,6 +64,7 @@
 }
 
 .primaryText {
+  position: inherit;
   font-family: Inter, sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -76,6 +85,7 @@
 }
 
 #supportingText {
+  position: inherit;
   width: 87.2%;
   height: 40%;
   font-family: Inter, sans-serif;
@@ -573,4 +583,65 @@ ul {
   flex-direction: column;
   align-items: center;
   background: url('Images/illustration-contact-form1.png') 100% 56% no-repeat;
+}
+
+@media all and (min-width: 768px) {
+  #toolbar {
+    display: none;
+  }
+  #navDesktop {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+    justify-content: center;
+    z-index: 100;
+  }
+
+  #itemNav {
+    display: flex;
+    position: fixed;
+    width: 255px;
+    height: 4.444vh;
+    justify-content: space-between;
+    align-self: center;
+    justify-items: center;
+  }
+
+  .navLink {
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    color: #344563;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 4.444vh;
+  }
+
+  #headline {
+    background-image: url('Images/Header-llustration-desktop@2x.svg');
+    width: 100vw;
+    height: 159.36vh;
+    position: relative;
+    gap: 2.66vh;
+  }
+
+  #primaryText {
+    margin-top: 25.77vh;
+    width: 63.88vw;
+    margin-bottom: 0;;
+  }
+
+  #supportingText {
+    width: 63.88vw;
+    height: 13.32vh;
+  }
+
+  #socialMediaIcons {
+    margin-top: 3.77vh;
+  }
+
+  #actionButtonPlaceholder {
+    margin-top: 8.22vh;
+  }
+  
 }

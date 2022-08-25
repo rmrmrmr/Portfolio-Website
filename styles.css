@@ -456,7 +456,6 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url('Images/illustration-contact-form1.png') 80% 68% no-repeat;
 }
 
 #contactMeTextPH {
@@ -567,4 +566,11 @@ ul {
 
 #smI {
   justify-content: center;
+}
+
+#bottomBackgroundImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('Images/illustration-contact-form1.png') 100% 56% no-repeat;
 }

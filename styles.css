@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
 body {
   margin: 0;
@@ -482,9 +482,11 @@ ul {
   font-family: Inter, sans-serif;
   font-weight: 700;
   font-size: 40px;
-  line-height: 52px;
+  line-height: 130%;
   text-align: center;
   color: #172b4d;
+  height: 363px;
+  width: 327px;
 }
 
 #contactMeBlankSpace {
@@ -527,8 +529,9 @@ ul {
 }
 
 #submitFormBttn {
-  height: 120px;
+  height: 48px;
   width: 129px;
+  padding: 12px;
   border-radius: 4px;
   background-color: #36b37f;
   color: #fff;

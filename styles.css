@@ -58,8 +58,6 @@ body {
   background-size: 100%;
 }
 
-
-
 #primaryText {
   width: 87.2%;
   height: max-content;
@@ -122,18 +120,6 @@ ul {
   margin-top: 62px;
 }
 
-#rWrksTitle {
-  height: 97px;
-  font-family: Inter, sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #172b4d;
-}
-
 #indicatorRW {
   height: 4px;
   width: 48px;
@@ -157,6 +143,18 @@ ul {
   display: flex;
   flex-direction: column;
   justify-self: center;
+}
+
+#rWrksTitle {
+  height: 97px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #172b4d;
 }
 
 .card {
@@ -632,8 +630,6 @@ ul {
     gap: 2.66vh;
   }
 
-
-
   #primaryText {
     margin-top: 25.77vh;
     width: 53.5;
@@ -655,5 +651,63 @@ ul {
     margin-top: 12vh;
   }
   
+  #recentWorks {
+    height: max-content;
+    grid-template-columns: 1fr 0.8fr 1fr;
+    grid-template-rows: max-content, auto, auto;
+    justify-content: space-around;
+    row-gap: 10px;
+  }
 
+  #indicatorRW {
+    display: none;
+  }
+
+  #recentWorksHeader {
+    grid-column: 1 / 4;
+    margin-top: 11.41vh;
+    height: max-content;
+    margin-bottom: 5vh;
+  }
+
+  #rWrksTitle {
+    width: max-content;
+    height: max-content;
+  }
+
+  #card1, #card4 {
+    margin-top: 24px;
+    justify-self: end;
+    margin-right: 5px;
+  }
+
+  #card3, #card6 {
+    justify-self: start;
+    margin-left: 5px;
+  }
+
+  .projectSnapshot {
+    height: 220px;
+  }
+
+  .projectTag {
+    height: 3.55vh;
+  }
+
+  #aboutMePage {
+    top: 21.33vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content max-content;
+  }
+
+  #aboutMeHeader {
+    grid-column: 1 / 4;
+    justify-self: center;
+    width: 63.88vw;
+  }
+
+  #abtMeText {
+    padding: 30px 60px;
+  }
+  
 }

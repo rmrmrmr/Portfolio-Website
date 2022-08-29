@@ -10,14 +10,14 @@
 </head>
 
 <body>
-  <header id="toolbar">
+  <section id="toolbar">
     <div id="logoPlaceholder">
       <a href="index.html" id="logoText">Welcome</a>
     </div>
     <nav>
       <input id="headerButton" type="image" src="Images/Enabled.png" alt="Menu">
     </nav>
-  </header>
+  </section>
   <section id="headline">
     <div class="primaryText" id="primaryText">
       <h1 class="primaryText" id="primaryName">
@@ -61,12 +61,12 @@
       </li>
     </ul>
     <input id="actionButtonPlaceholder" type="image" src="Images/Disabled.png" alt="Next Page">
+  </section>
+  <section id="recentWorks">
     <div id="recentWorksHeader">
       <p id="rWrksTitle">My Recent Works</p>
       <img id="indicatorRW" src="Images/Indicator.png" alt="Indicator">
     </div>
-  </section>
-  <section id="recentWorks">
     <div class="card" id="card1">
       <div class="projectSnapshot"></div>
       <div class="projectInfo">
@@ -277,10 +277,11 @@
   <section id="aboutMePage">
     <div id="aboutMeHeader">
       <h2 id="abtMeTitle" class="abtMeText">About me</h2>
-      <h3 id="abtMeText" class="abtMeText">I can help you build a product,<br>feature or website. Look through<br>some
-        of
-        my work and experience! If<br>you like what you see and have a<br>project you need coded,<br>don't hesitate to
-        contact me.</h3>
+      <h3 id="abtMeText" class="abtMeText">
+        I can help you build a product, feature or website. Look through some of
+        my work and experience! If you like what you see and have a project you 
+        need coded, don't hesitate tocontact me.
+      </h3>
       <a href="https://github.com/rmrmrmr" id="resumeLink" class="seeProjectBttn">
         Get My Resume
       </a>
@@ -352,46 +353,49 @@
       </div>
       <p class="abtMeCardTitle">Skills</p>
       <ul class="abtMeCardList2">
-        <li>
+        <li class="skillsTag">
           <button type="button" class="langButton">
             Codekit
           </button>
         </li>
-        <li>
+        <li class="skillsTag">
           <button type="button" class="langButton">
             GitHub
           </button>
         </li>
-        <li>
+        <li class="skillsTag">
           <button type="button" class="langButton">
             Codepen
           </button>
         </li>
-        <li>
+        <li class="skillsTag">
           <button type="button" class="langButton">
             Gitlab
           </button>
         </li>
-        <li>
-          <button type="button" class="langButton secondOrderBttn2" id="terminalTag">
+        <li class="skillsTag">
+          <button type="button" class="langButton" id="terminalTag">
             Terminal
           </button>
         </li>
       </ul>
     </div>
+  </section>
+  <section id="contact">
     <div id="contactMeTextPH">
-      <p id="contactMeText">
-        I'm always interested
-        in hearing about new projects,
-        so if you'd like to chat please
-        get in touch.
-      </p>
+      <h2 id="contactMeText">
+        I'm always<br>interested in<br>
+        hearing about<br>new projects, so<br>
+        if you'd like to<br>chat please get<br>
+        in touch.
+      </h2>
     </div>
     <div id="contactMeBlankSpace"></div>
-    <form id="contactForm">
-      <input type="text" name="FullName" id="nameFormBox" class="formBox1" placeholder="Full Name">
-      <input type="text" name="EmailAddress" id="mailFormBox" class="formBox1" placeholder="Email Adress">
-      <input type="text" name="EmailAddress" id="commentsFormBox" class="formBox2" placeholder="Enter Text Here">
+    <form id="contactForm" action="https://formspree.io/f/moqbvdgn" method="post">
+      <input type="text" name="name" id="nameFormBox" class="formBox1" placeholder="Full Name" maxlength="30" required>
+      <input type="email" name="email" id="mailFormBox" class="formBox1" placeholder="Email Adress" required>
+      <textarea name="comments" id="commentsFormBox" class="formBox2"
+        maxlength="500" required>Any comments?</textarea>
       <button type="submit" id="submitFormBttn">Get in touch</button>
     </form>
     <div id="smI">

@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
 #toolbar {
-  position: absolute;
+  position: relative;
   display: flex;
-  width: 375px;
+  width: 100%;
   height: 48px;
   color: #181e25;
   justify-content: space-between;
@@ -36,24 +36,23 @@
 }
 
 #headline {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 375px;
-  height: 800px;
-  margin-top: 48px;
-  background-image: url('Images/bgMain.png');
-  background-repeat: no-repeat;
+  width: 100%;
+  height: max-content;
+  background: url('Images/bgMain.png') no-repeat;
+  background-size: 100%;
 }
 
 #primaryText {
-  width: 327px;
-  height: 192px;
+  width: 87.2%;
+  height: max-content;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   margin-top: 64px;
+  margin-bottom: 2%;
 }
 
 .primaryText {
@@ -64,28 +63,28 @@
 }
 
 #primaryName {
-  height: 96px;
+  height: max-content;
   margin: 0;
   color: #172b4d;
 }
 
 #primaryJob {
-  height: 96px;
+  height: 50%;
   margin: 0;
   color: #36b37e;
+  justify-self: flex-start;
 }
 
 #supportingText {
-  width: 327px;
-  height: 165px;
+  width: 87.2%;
+  height: 40%;
   font-family: Inter, sans-serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 140%;
   text-align: center;
   color: #172b4d;
-  margin-top: 58px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 #socialMediaIcons {
@@ -105,14 +104,6 @@ ul {
 
 #actionButtonPlaceholder {
   margin-top: 62px;
-}
-
-#recentWorksHeader {
-  margin-top: 22px;
-  height: 125px;
-  width: 327px;
-  display: flex;
-  flex-direction: column;
 }
 
 #rWrksTitle {
@@ -135,12 +126,21 @@ ul {
 }
 
 #recentWorks {
-  position: absolute;
-  margin-top: 855px;
+  position: relative;
   display: grid;
-  grid-template-columns: 375px;
-  grid-template-rows: 536px repeat(4, 1fr) 566px;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
   min-height: fit-content;
+  justify-content: center;
+}
+
+#recentWorksHeader {
+  margin-top: 22px;
+  height: 125px;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
 }
 
 .card {
@@ -252,17 +252,21 @@ ul {
 
 .seeProjectBttn:hover {
   cursor: pointer;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.seeProjectBttn:active {
+  background-color: #008552;
 }
 
 #aboutMePage {
-  position: absolute;
-  top: 3957px;
-  width: 375px;
+  position: relative;
+  width: 100%;
+  top: 68px;
   height: max-content;
   display: grid;
   grid-template-columns: 1;
   justify-content: center;
-  background: url('Images/illustration-contact-form1.png') 100% 87% no-repeat;
 }
 
 #aboutMeHeader {
@@ -311,10 +315,6 @@ ul {
   text-decoration: none;
 }
 
-#resumeBttn:hover {
-  cursor: pointer;
-}
-
 #resumeLink {
   background-color: #36b37f;
   color: white;
@@ -330,6 +330,15 @@ ul {
   text-align: center;
   align-self: flex-end;
   text-decoration: none;
+}
+
+#resumeLink:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+#resumeLink:active {
+  background-color: #008552;
 }
 
 #languagesCard {
@@ -364,9 +373,10 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-left: 28px;
   margin-right: 28px;
+  margin-top: 0;
 }
 
 .langButton {
@@ -425,20 +435,28 @@ ul {
   display: flex;
   flex-wrap: wrap;
   width: 303px;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 12px;
-  margin-right: 12px;
-  margin-bottom: 0;
+  justify-content: center;
+  margin: 0 12px;
   gap: 8px;
 }
 
-.secondOrderBttn2 {
-  margin-top: 0;
+.skillsTag {
+  height: 40px;
 }
 
 #terminalTag {
-  margin-left: 113px;
+  margin-top: 0;
+}
+
+#contact {
+  position: relative;
+  top: 68px;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('Images/illustration-contact-form1.png') 80% 68% no-repeat;
 }
 
 #contactMeTextPH {
@@ -451,9 +469,11 @@ ul {
   font-family: Inter, sans-serif;
   font-weight: 700;
   font-size: 40px;
-  line-height: 52px;
+  line-height: 130%;
   text-align: center;
   color: #172b4d;
+  height: 363px;
+  width: 327px;
 }
 
 #contactMeBlankSpace {
@@ -483,6 +503,8 @@ ul {
 }
 
 #commentsFormBox {
+  height: 200px;
+  width: 327px;
   border-radius: 4px;
   border-color: #60c095;
   font-family: Inter, sans-serif;
@@ -490,14 +512,13 @@ ul {
   font-size: 15px;
   line-height: 24px;
   color: #091e42;
-  padding-bottom: 110px;
-  padding-top: 4px;
-  padding-left: 4px;
+  resize: none;
 }
 
 #submitFormBttn {
-  height: 120px;
+  height: 48px;
   width: 129px;
+  padding: 12px;
   border-radius: 4px;
   background-color: #36b37f;
   color: #fff;
@@ -512,6 +533,11 @@ ul {
 
 #submitFormBttn:hover {
   cursor: pointer;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+#submitFormBttn:active {
+  background-color: #008552;
 }
 
 #socialMediaIcons2 {
@@ -521,8 +547,7 @@ ul {
   margin: 0;
   justify-content: space-between;
   align-items: center;
-  margin-top: 46px;
-  justify-self: center;
+  margin-top: 24px;
 }
 
 #contactEmailPH {
@@ -544,5 +569,5 @@ ul {
 }
 
 #smI {
-  justify-self: center;
+  justify-content: center;
 }

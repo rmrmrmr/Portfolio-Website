@@ -210,13 +210,10 @@ ul {
   justify-content: center;
 }
 
-.projectButtonPH {
+.projectTag {
   display: flex;
   align-items: center;
   text-decoration: none;
-}
-
-.projectTag {
   background-color: #ebf0ee;
   border-style: none;
   height: 32px;
@@ -227,7 +224,6 @@ ul {
   font-size: 12px;
   line-height: 16px;
   color: #3a4a42;
-  letter-spacing: 0.03em;
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -236,20 +232,9 @@ ul {
   cursor: pointer;
 }
 
-.seeProjectBttnPH {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 69px;
-  width: 305px;
-}
-
-.seeProjectBttnLink {
+.seeProjectBttn {
   text-decoration: none;
   color: #fff;
-}
-
-.seeProjectBttn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -633,10 +618,11 @@ ul {
   
   #recentWorks {
     height: max-content;
-    grid-template-columns: 1fr 0.8fr 1fr;
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: max-content, auto, auto;
-    justify-content: space-around;
-    row-gap: 10px;
+    justify-content: center;
+    row-gap: 3.55vh;
+    column-gap: 1.66vw;
   }
 
   #indicatorRW {
@@ -655,26 +641,60 @@ ul {
     height: max-content;
   }
 
-  #card1, #card4 {
-    margin-top: 24px;
-    justify-self: end;
-    margin-right: 5px;
+  .card {
+    height: 52.66vh;
+    width:26.625vw;
   }
 
-  #card3, #card6 {
-    justify-self: start;
-    margin-left: 5px;
+  #card1 {
+    margin-top: 24px;
+    height: 52.66vh;
+    width: 26.625vw;
   }
 
   .projectSnapshot {
-    height: 220px;
+    box-sizing: border-box;
+    height: 28vh;
+    width: 26.625vw;
+  }
+
+  .projectInfo {
+    box-sizing: border-box;
+    width: 26.625vw;
+    height: 24.66vh;
+  }
+
+  .projectName {
+    width: 20.48vw;
+    height: 6.33vh;
+    font-size: 1.66vw;
+    line-height: 133%;
   }
 
   .projectTag {
     height: 3.55vh;
+    width: max-content;
+    font-size: 0.83vw;
+    line-height: 133%;
+    padding-left: 0.83vw;
+    padding-right: 0.83vw;
   }
 
-  #aboutMePage {
+  .projectTagPH {
+    margin: 0;
+  }
+
+  .seeProjectBttn {
+    box-sizing: border-box;
+    padding: 1.33vh 0.83vw;
+    font-size: 1.18vw;
+    line-height: 141%;
+    width: 8.47vw;
+    height: 5.33vh;
+    row-gap: 1px;
+  }
+
+  /* #aboutMePage {
     top: 21.33vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: max-content max-content;
@@ -689,5 +709,5 @@ ul {
   #abtMeText {
     padding: 30px 60px;
   }
-  
+   */
 }

@@ -246,7 +246,6 @@ ul {
   font-family: Inter, sans-serif;
   font-weight: 500;
   font-size: 17px;
-  color: #fff;
 }
 
 .seeProjectBttn:hover {
@@ -510,7 +509,7 @@ ul {
   background-color: #008552;
 }
 
-#socialMediaIcons2 {
+.socialMediaIcons2 {
   display: flex;
   width: 170.17px;
   height: 20px;
@@ -557,6 +556,7 @@ ul {
   #toolbar {
     display: none;
   }
+
   #navDesktop {
     display: flex;
     position: fixed;
@@ -599,7 +599,6 @@ ul {
     width: 53.5;
     height: max-content;
     margin-bottom: 0;
-
   }
 
   #supportingText {
@@ -614,7 +613,7 @@ ul {
   #actionButtonPlaceholder {
     margin-top: 12vh;
   }
-  
+
   #recentWorks {
     height: max-content;
     grid-template-columns: repeat(3, auto);
@@ -642,7 +641,7 @@ ul {
 
   .card {
     height: 60vh;
-    width:26.625vw;
+    width: 26.625vw;
   }
 
   #card1 {
@@ -693,7 +692,6 @@ ul {
     font-size: 1.18vw;
     line-height: 141%;
     width: 8.47vw;
-    height: 6vh;
     margin-top: 1vh;
   }
 
@@ -721,11 +719,10 @@ ul {
 
   #abtMeText {
     width: 63.88vw;
-    /* font-size: 1.4vw; */
     height: max-content;
     padding-bottom: 2.66vh;
   }
-  
+
   #languagesCard {
     margin-top: 0;
     justify-self: end;
@@ -756,10 +753,9 @@ ul {
     margin-bottom: 0;
   }
 
-  .langButton{
-  height: max-content;
-  /* font-size: 1vw; */
-  padding: 0.83vw;
+  .langButton {
+    height: max-content;
+    padding: 0.83vw;
   }
 
   #contact {
@@ -771,7 +767,7 @@ ul {
     padding-top: 18.22vh;
     margin: 0;
     background: url('Images/illustration-1-contact-form-desktop.svg') 0% 90% no-repeat, url('Images/illustration-2-contact-form-desktop.svg') 20% 77% no-repeat, url('Images/Frame.svg') 100% 70% no-repeat, url('Images/Rectangle 42.png') 0% 93% no-repeat;
-  } 
+  }
 
   #contactMeBlankSpace {
     display: none;
@@ -804,7 +800,15 @@ ul {
     height: 36.66vh;
   }
 
-  #smI, #contactEmailPH, #bottomBar {
+  #smI {
+    display: none;
+  }
+
+  #contactEmailPH {
+    display: none;
+  }
+
+  #bottomBar {
     display: none;
   }
 

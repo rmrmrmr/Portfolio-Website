@@ -798,6 +798,7 @@ ul {
     grid-row: 1/2;
     width: 47vw;
     height: 36.66vh;
+    row-gap: 2.66vh;
   }
 
   #smI {
@@ -815,14 +816,20 @@ ul {
   .formBox1 {
     box-sizing: content-box;
     width: 47vw;
+    height: min-content;
+    border-color: #d0d9d4;
   }
 
   #commentsFormBox {
-    width: 47vw;
+    width: 47.5vw;
+    height: 12.66vh;
+    box-sizing: border-box;
   }
 
   #submitFormBttn {
     align-self: flex-start;
+    height: min-content;
+    padding: 1.33vh;
   }
 
   #smI2 {

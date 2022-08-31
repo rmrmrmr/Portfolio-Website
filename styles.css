@@ -674,12 +674,11 @@ ul {
   }
 
   .projectTag {
-    height: 5vh;
+    height: max-content;
     width: max-content;
     font-size: 1vw;
     line-height: 133%;
-    padding-left: 0.83vw;
-    padding-right: 0.83vw;
+    padding: 0.83vw;
   }
 
   .projectTagPH {
@@ -689,6 +688,7 @@ ul {
   }
 
   .seeProjectBttn {
+    height: max-content;
     box-sizing: border-box;
     padding: 1.33vh 0.83vw;
     font-size: 1.18vw;
@@ -750,12 +750,19 @@ ul {
 
   .abtMeCardList {
     box-sizing: content-box;
-    width: 23.4vw;
+    width: 24vw;
     justify-self: center;
     align-content: flex-start;
+    gap: 0.55vw;
+    margin-bottom: 0;
   }
 
   .langButton{
-  font-size: 1vw;
+  height: max-content;
+  /* font-size: 1vw; */
+  padding: 0.83vw;
   }
+
+  
+
 }

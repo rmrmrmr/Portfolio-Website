@@ -621,7 +621,7 @@ ul {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: max-content, auto, auto;
     justify-content: center;
-    row-gap: 3.55vh;
+    row-gap: 1vh;
     column-gap: 1.66vw;
   }
 
@@ -642,39 +642,41 @@ ul {
   }
 
   .card {
-    height: 52.66vh;
+    height: 60vh;
     width:26.625vw;
   }
 
   #card1 {
     margin-top: 24px;
-    height: 52.66vh;
+    height: 60vh;
     width: 26.625vw;
   }
 
   .projectSnapshot {
     box-sizing: border-box;
-    height: 28vh;
+    height: 50%;
     width: 26.625vw;
   }
 
   .projectInfo {
     box-sizing: border-box;
     width: 26.625vw;
-    height: 24.66vh;
+    height: 50%;
+    gap: 2.5vh;
+    padding: 1.77vh 0.76vw;
   }
 
   .projectName {
     width: 20.48vw;
-    height: 6.33vh;
-    font-size: 1.66vw;
+    height: max-content;
+    font-size: 1.8vw;
     line-height: 133%;
   }
 
   .projectTag {
-    height: 3.55vh;
+    height: 5vh;
     width: max-content;
-    font-size: 0.83vw;
+    font-size: 1vw;
     line-height: 133%;
     padding-left: 0.83vw;
     padding-right: 0.83vw;
@@ -682,6 +684,8 @@ ul {
 
   .projectTagPH {
     margin: 0;
+    height: max-content;
+    width: max-content;
   }
 
   .seeProjectBttn {
@@ -690,11 +694,11 @@ ul {
     font-size: 1.18vw;
     line-height: 141%;
     width: 8.47vw;
-    height: 5.33vh;
-    row-gap: 1px;
+    height: 6vh;
+    margin-top: 1vh;
   }
 
-  /* #aboutMePage {
+  #aboutMePage {
     top: 21.33vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: max-content max-content;
@@ -709,5 +713,5 @@ ul {
   #abtMeText {
     padding: 30px 60px;
   }
-   */
+  
 }

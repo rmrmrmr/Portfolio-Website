@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
+body {
+  margin: 0;
+}
+
 #toolbar {
   position: relative;
   display: flex;
@@ -35,12 +39,20 @@
   margin-left: 24px;
 }
 
+#navDesktop {
+  display: none;
+}
+
+#itemNav {
+  display: none;
+}
+
 #headline {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: max-content;
   background: url('Images/bgMain.png') no-repeat;
   background-size: 100%;
@@ -56,6 +68,7 @@
 }
 
 .primaryText {
+  position: inherit;
   font-family: Inter, sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -76,6 +89,7 @@
 }
 
 #supportingText {
+  position: inherit;
   width: 87.2%;
   height: 40%;
   font-family: Inter, sans-serif;
@@ -106,18 +120,6 @@ ul {
   margin-top: 62px;
 }
 
-#rWrksTitle {
-  height: 97px;
-  font-family: Inter, sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #172b4d;
-}
-
 #indicatorRW {
   height: 4px;
   width: 48px;
@@ -141,6 +143,18 @@ ul {
   display: flex;
   flex-direction: column;
   justify-self: center;
+}
+
+#rWrksTitle {
+  height: 97px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #172b4d;
 }
 
 .card {
@@ -196,13 +210,10 @@ ul {
   justify-content: center;
 }
 
-.projectButtonPH {
+.projectTag {
   display: flex;
   align-items: center;
   text-decoration: none;
-}
-
-.projectTag {
   background-color: #ebf0ee;
   border-style: none;
   height: 32px;
@@ -213,7 +224,6 @@ ul {
   font-size: 12px;
   line-height: 16px;
   color: #3a4a42;
-  letter-spacing: 0.03em;
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -222,20 +232,9 @@ ul {
   cursor: pointer;
 }
 
-.seeProjectBttnPH {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 69px;
-  width: 305px;
-}
-
-.seeProjectBttnLink {
+.seeProjectBttn {
   text-decoration: none;
   color: #fff;
-}
-
-.seeProjectBttn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,7 +246,6 @@ ul {
   font-family: Inter, sans-serif;
   font-weight: 500;
   font-size: 17px;
-  color: #fff;
 }
 
 .seeProjectBttn:hover {
@@ -363,27 +361,17 @@ ul {
   font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 133%;
   color: #344563;
   text-align: center;
   margin: 0;
-}
-
-.abtMeCardList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-left: 28px;
-  margin-right: 28px;
-  margin-top: 0;
 }
 
 .langButton {
   font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 133%;
   letter-spacing: 0.03em;
   color: #36b37e;
   background-color: #fff;
@@ -392,7 +380,15 @@ ul {
   border: none;
   border-radius: 8px;
   padding: 12px;
-  margin-top: 24px;
+}
+
+.abtMeCardList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 327px;
+  justify-content: center;
+  align-content: center;
+  gap: 8px;
 }
 
 #frameworksCard {
@@ -407,18 +403,6 @@ ul {
   grid-template-rows: 184px 32px 136px;
 }
 
-.secondOrderBttn {
-  margin-top: 8px;
-}
-
-#capybaraTag {
-  margin-left: 47px;
-}
-
-#seleniumTag {
-  margin-right: 47px;
-}
-
 #skillsCard {
   width: 327px;
   height: 352px;
@@ -429,15 +413,6 @@ ul {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 184px 32px 136px;
-}
-
-.abtMeCardList2 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 303px;
-  justify-content: center;
-  margin: 0 12px;
-  gap: 8px;
 }
 
 .skillsTag {
@@ -456,13 +431,6 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url('Images/illustration-contact-form1.png') 80% 68% no-repeat;
-}
-
-#contactMeTextPH {
-  height: 363px;
-  width: 327px;
-  justify-self: center;
 }
 
 #contactMeText {
@@ -470,6 +438,7 @@ ul {
   font-weight: 700;
   font-size: 40px;
   line-height: 130%;
+  justify-self: center;
   text-align: center;
   color: #172b4d;
   height: 363px;
@@ -540,7 +509,7 @@ ul {
   background-color: #008552;
 }
 
-#socialMediaIcons2 {
+.socialMediaIcons2 {
   display: flex;
   width: 170.17px;
   height: 20px;
@@ -570,4 +539,303 @@ ul {
 
 #smI {
   justify-content: center;
+}
+
+#bottomBackgroundImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('Images/illustration-contact-form1.png') 100% 56% no-repeat;
+}
+
+#smI2 {
+  display: none;
+}
+
+@media all and (min-width: 768px) {
+  #toolbar {
+    display: none;
+  }
+
+  #navDesktop {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+    justify-content: center;
+    z-index: 100;
+  }
+
+  #itemNav {
+    display: flex;
+    position: fixed;
+    width: 255px;
+    height: 4.444vh;
+    justify-content: space-between;
+    align-self: center;
+    justify-items: center;
+  }
+
+  .navLink {
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    color: #344563;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 4.444vh;
+  }
+
+  #headline {
+    background-image: url('Images/Header-llustration-desktop@2x.svg');
+    background-size: 100%;
+    width: 100vw;
+    height: calc(0.733 * 100vw);
+    position: relative;
+    gap: 2.66vh;
+  }
+
+  #primaryText {
+    margin-top: 25.77vh;
+    width: 53.5;
+    height: max-content;
+    margin-bottom: 0;
+  }
+
+  #supportingText {
+    width: 53.5vw;
+    height: max-content;
+  }
+
+  #socialMediaIcons {
+    margin-top: 0;
+  }
+
+  #actionButtonPlaceholder {
+    margin-top: 12vh;
+  }
+
+  #recentWorks {
+    height: max-content;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: max-content, auto, auto;
+    justify-content: center;
+    row-gap: 1vh;
+    column-gap: 1.66vw;
+  }
+
+  #indicatorRW {
+    display: none;
+  }
+
+  #recentWorksHeader {
+    grid-column: 1 / 4;
+    margin-top: 11.41vh;
+    height: max-content;
+    margin-bottom: 5vh;
+  }
+
+  #rWrksTitle {
+    width: max-content;
+    height: max-content;
+  }
+
+  .card {
+    height: 60vh;
+    width: 26.625vw;
+  }
+
+  #card1 {
+    margin-top: 24px;
+    height: 60vh;
+    width: 26.625vw;
+  }
+
+  .projectSnapshot {
+    box-sizing: border-box;
+    height: 50%;
+    width: 26.625vw;
+  }
+
+  .projectInfo {
+    box-sizing: border-box;
+    width: 26.625vw;
+    height: 50%;
+    gap: 2.5vh;
+    padding: 1.77vh 0.76vw;
+  }
+
+  .projectName {
+    width: 20.48vw;
+    height: max-content;
+    font-size: 1.8vw;
+    line-height: 133%;
+  }
+
+  .projectTag {
+    height: max-content;
+    width: max-content;
+    font-size: 1vw;
+    line-height: 133%;
+    padding: 0.83vw;
+  }
+
+  .projectTagPH {
+    margin: 0;
+    height: max-content;
+    width: max-content;
+  }
+
+  .seeProjectBttn {
+    height: max-content;
+    box-sizing: border-box;
+    padding: 1.33vh 0.83vw;
+    font-size: 1.18vw;
+    line-height: 141%;
+    width: 8.47vw;
+    margin-top: 1vh;
+  }
+
+  #aboutMePage {
+    box-sizing: content-box;
+    padding-top: 21.33vh;
+    grid-template-columns: 1fr 25vw 1fr;
+    grid-template-rows: 333px 352px;
+    background: url('Images/illustration-about-me-2-desktop.svg') 0% 38% no-repeat, url('Images/illustration-about me-1-desktop.svg') 100% 9% no-repeat;
+    column-gap: 1.66vw;
+  }
+
+  #aboutMeHeader {
+    grid-column: 1 / 4;
+    justify-self: center;
+    width: 100vw;
+    grid-template-rows: max-content max-content max-content;
+    background: none;
+  }
+
+  #abtMeTitle {
+    height: max-content;
+    padding-bottom: 2.66vh;
+  }
+
+  #abtMeText {
+    width: 63.88vw;
+    height: max-content;
+    padding-bottom: 2.66vh;
+  }
+
+  #languagesCard {
+    margin-top: 0;
+    justify-self: end;
+    width: 25vw;
+  }
+
+  #frameworksCard {
+    margin-top: 0;
+    width: 25vw;
+  }
+
+  #skillsCard {
+    margin-top: 0;
+    justify-self: start;
+    width: 25vw;
+  }
+
+  .abtMeCardTitle {
+    font-size: 1.66;
+  }
+
+  .abtMeCardList {
+    box-sizing: content-box;
+    width: 24vw;
+    justify-self: center;
+    align-content: flex-start;
+    gap: 0.55vw;
+    margin-bottom: 0;
+  }
+
+  .langButton {
+    height: max-content;
+    padding: 0.83vw;
+  }
+
+  #contact {
+    box-sizing: content-box;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 9.34vw 32.15vw 47.1vw 9.34vw;
+    grid-template-rows: 36.66vh 27.77vh 7.88vh;
+    padding-top: 18.22vh;
+    margin: 0;
+    background: url('Images/illustration-1-contact-form-desktop.svg') 0% 90% no-repeat, url('Images/illustration-2-contact-form-desktop.svg') 20% 77% no-repeat, url('Images/Frame.svg') 100% 70% no-repeat, url('Images/Rectangle 42.png') 0% 93% no-repeat;
+  }
+
+  #contactMeBlankSpace {
+    display: none;
+  }
+
+  #contactMeText {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 28.44vh;
+    width: 32.15vw;
+    font-size: 29px;
+    align-self: flex-start;
+    margin: 0;
+    text-align: center;
+    line-height: 173%;
+  }
+
+  #bottomBackgroundImage {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background: none;
+  }
+
+  #contactForm {
+    box-sizing: content-box;
+    padding-left: 1.66vw;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 47vw;
+    height: 36.66vh;
+    row-gap: 2.66vh;
+  }
+
+  #smI {
+    display: none;
+  }
+
+  #contactEmailPH {
+    display: none;
+  }
+
+  #bottomBar {
+    display: none;
+  }
+
+  .formBox1 {
+    box-sizing: content-box;
+    width: 47vw;
+    height: min-content;
+    border-color: #d0d9d4;
+  }
+
+  #commentsFormBox {
+    width: 47.5vw;
+    height: 12.66vh;
+    box-sizing: border-box;
+  }
+
+  #submitFormBttn {
+    align-self: flex-start;
+    height: min-content;
+    padding: 1.33vh;
+  }
+
+  #smI2 {
+    display: inline;
+    grid-column: 2 / 4;
+    grid-row: 3/4;
+    justify-self: center;
+  }
 }

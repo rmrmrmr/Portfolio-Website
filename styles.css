@@ -434,17 +434,12 @@ ul {
   align-items: center;
 }
 
-#contactMeTextPH {
-  height: 363px;
-  width: 327px;
-  justify-self: center;
-}
-
 #contactMeText {
   font-family: Inter, sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 130%;
+  justify-self: center;
   text-align: center;
   color: #172b4d;
   height: 363px;
@@ -552,6 +547,10 @@ ul {
   flex-direction: column;
   align-items: center;
   background: url('Images/illustration-contact-form1.png') 100% 56% no-repeat;
+}
+
+#smI2 {
+  display: none;
 }
 
 @media all and (min-width: 768px) {
@@ -763,6 +762,69 @@ ul {
   padding: 0.83vw;
   }
 
-  
+  #contact {
+    box-sizing: content-box;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 9.34vw 32.15vw 47.1vw 9.34vw;
+    grid-template-rows: 36.66vh 27.77vh 7.88vh;
+    padding-top: 18.22vh;
+    margin: 0;
+    background: url('Images/illustration-1-contact-form-desktop.svg') 0% 90% no-repeat, url('Images/illustration-2-contact-form-desktop.svg') 20% 77% no-repeat, url('Images/Frame.svg') 100% 70% no-repeat, url('Images/Rectangle 42.png') 0% 93% no-repeat;
+  } 
 
+  #contactMeBlankSpace {
+    display: none;
+  }
+
+  #contactMeText {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 28.44vh;
+    width: 32.15vw;
+    font-size: 29px;
+    align-self: flex-start;
+    margin: 0;
+    text-align: center;
+    line-height: 173%;
+  }
+
+  #bottomBackgroundImage {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background: none;
+  }
+
+  #contactForm {
+    box-sizing: content-box;
+    padding-left: 1.66vw;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 47vw;
+    height: 36.66vh;
+  }
+
+  #smI, #contactEmailPH, #bottomBar {
+    display: none;
+  }
+
+  .formBox1 {
+    box-sizing: content-box;
+    width: 47vw;
+  }
+
+  #commentsFormBox {
+    width: 47vw;
+  }
+
+  #submitFormBttn {
+    align-self: flex-start;
+  }
+
+  #smI2 {
+    display: inline;
+    grid-column: 2 / 4;
+    grid-row: 3/4;
+    justify-self: center;
+  }
 }

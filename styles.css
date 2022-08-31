@@ -362,7 +362,7 @@ ul {
   font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 133%;
   color: #344563;
   text-align: center;
   margin: 0;
@@ -372,7 +372,7 @@ ul {
   font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 133%;
   letter-spacing: 0.03em;
   color: #36b37e;
   background-color: #fff;
@@ -701,9 +701,10 @@ ul {
   #aboutMePage {
     box-sizing: content-box;
     padding-top: 21.33vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: max-content max-content;
+    grid-template-columns: 1fr 25vw 1fr;
+    grid-template-rows: 333px 352px;
     background: url('Images/illustration-about-me-2-desktop.svg') 0% 38% no-repeat, url('Images/illustration-about me-1-desktop.svg') 100% 9% no-repeat;
+    column-gap: 1.66vw;
   }
 
   #aboutMeHeader {
@@ -726,4 +727,35 @@ ul {
     padding-bottom: 2.66vh;
   }
   
+  #languagesCard {
+    margin-top: 0;
+    justify-self: end;
+    width: 25vw;
+  }
+
+  #frameworksCard {
+    margin-top: 0;
+    width: 25vw;
+  }
+
+  #skillsCard {
+    margin-top: 0;
+    justify-self: start;
+    width: 25vw;
+  }
+
+  .abtMeCardTitle {
+    font-size: 1.66;
+  }
+
+  .abtMeCardList {
+    box-sizing: content-box;
+    width: 23.4vw;
+    justify-self: center;
+    align-content: flex-start;
+  }
+
+  .langButton{
+  font-size: 1vw;
+  }
 }

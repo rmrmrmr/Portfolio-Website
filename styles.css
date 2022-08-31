@@ -699,19 +699,31 @@ ul {
   }
 
   #aboutMePage {
-    top: 21.33vh;
+    box-sizing: content-box;
+    padding-top: 21.33vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: max-content max-content;
+    background: url('Images/illustration-about-me-2-desktop.svg') 0% 38% no-repeat, url('Images/illustration-about me-1-desktop.svg') 100% 9% no-repeat;
   }
 
   #aboutMeHeader {
     grid-column: 1 / 4;
     justify-self: center;
-    width: 63.88vw;
+    width: 100vw;
+    grid-template-rows: max-content max-content max-content;
+    background: none;
+  }
+
+  #abtMeTitle {
+    height: max-content;
+    padding-bottom: 2.66vh;
   }
 
   #abtMeText {
-    padding: 30px 60px;
+    width: 63.88vw;
+    /* font-size: 1.4vw; */
+    height: max-content;
+    padding-bottom: 2.66vh;
   }
   
 }

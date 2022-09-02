@@ -75,10 +75,13 @@ body {
   text-align: center;
 }
 
+
 #primaryName {
   height: max-content;
   margin: 0;
   color: #172b4d;
+  animation-name: load-rotate-lr;
+  animation-duration: 4s;
 }
 
 #primaryJob {
@@ -86,6 +89,8 @@ body {
   margin: 0;
   color: #36b37e;
   justify-self: flex-start;
+  animation-name: load-rotate-rl;
+  animation-duration: 2s;
 }
 
 #supportingText {
@@ -99,6 +104,8 @@ body {
   text-align: center;
   color: #172b4d;
   margin: 0;
+  animation-name: load-rotate-bt;
+  animation-duration: 2s;
 }
 
 #socialMediaIcons {
@@ -109,6 +116,8 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 58px;
+  animation-name: load-rotate-bt;
+  animation-duration: 2s;
 }
 
 ul {
@@ -554,6 +563,33 @@ ul {
   display: none;
 }
 
+@keyframes load-rotate-rl {
+  from {
+    transform: translate(100%, 0);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes load-rotate-lr {
+  from {
+    transform: translate(-100%, 0);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes load-rotate-bt {
+  from {
+    transform: translate(0, 900%);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
 @media all and (min-width: 768px) {
   #toolbar {
     display: none;
@@ -612,6 +648,10 @@ ul {
     margin-top: 0;
   }
 
+  .socialMediaIcons:hover {
+    transform: translate(0, -5px);
+  }
+
   #actionButtonPlaceholder {
     margin-top: 12vh;
   }
@@ -644,6 +684,10 @@ ul {
   .card {
     height: 60vh;
     width: 26.625vw;
+  }
+
+  .card:hover {
+    transform: translate(0, -10px);
   }
 
   #card1 {
@@ -731,15 +775,27 @@ ul {
     width: 25vw;
   }
 
+  #languagesCard:hover {
+    transform: translate(0, -10px);
+  }
+
   #frameworksCard {
     margin-top: 0;
     width: 25vw;
+  }
+
+  #frameworksCard:hover {
+    transform: translate(0, -10px);
   }
 
   #skillsCard {
     margin-top: 0;
     justify-self: start;
     width: 25vw;
+  }
+
+  #skillsCard:hover {
+    transform: translate(0, -10px);
   }
 
   .abtMeCardTitle {

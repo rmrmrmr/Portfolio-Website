@@ -75,7 +75,6 @@ body {
   text-align: center;
 }
 
-
 #primaryName {
   height: max-content;
   margin: 0;
@@ -567,6 +566,7 @@ ul {
   from {
     transform: translate(100%, 0);
   }
+
   to {
     transform: rotate(0);
   }
@@ -576,6 +576,7 @@ ul {
   from {
     transform: translate(-100%, 0);
   }
+
   to {
     transform: rotate(0);
   }
@@ -585,6 +586,7 @@ ul {
   from {
     transform: translate(0, 900%);
   }
+
   to {
     transform: rotate(0);
   }
@@ -738,7 +740,6 @@ ul {
     font-size: 1.18vw;
     line-height: 141%;
     width: 8.47vw;
-    /* margin-top: 1vh; */
   }
 
   #aboutMePage {
@@ -893,7 +894,6 @@ ul {
 
   #submitFormBttn {
     align-self: flex-start;
-    /* height: min-content; */
     width: max-content;
     padding: 1.33vh;
     font-size: 1.2vw;

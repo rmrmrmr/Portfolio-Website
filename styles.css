@@ -440,6 +440,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: url('Images/bottomIlust.svg') 100% 69% no-repeat;
 }
 
 #contactMeText {
@@ -555,7 +556,6 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url('Images/bottomIlust.svg') 100% 56% no-repeat;
 }
 
 #smI2 {

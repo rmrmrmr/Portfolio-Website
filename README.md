@@ -12,8 +12,7 @@ Here you can get to know a bit about my work an experience, check out some of my
 
 ## Online version 
 
-You can visit the webpage anytime here: https://rmrmrmr.github.io/Portfolio-Website/
-=======
+- You can visit the webpage anytime here: https://rmrmrmr.github.io/Portfolio-Website/
 
 
 ### Setup
@@ -26,8 +25,6 @@ Clone this repository into your local environment and install HTML&CSS linters(h
 - GitHub: [@rmrmrmr](https://github.com/rmrmrmr)
 - Twitter: [@ricmtza](https://twitter.com/ricmtza)
 - LinkedIn: [Ricardo Martínez](https://linkedin.com/in/)
-
-=======
 
 
 ## Show your support

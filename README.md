@@ -2,15 +2,16 @@
 
 # Portfolio Website (mobile version)
 
-> This is a mobile version of my portfolio webpage. So far, it has only the main page. 
+> Welcome to my Porfolio webpage.
+Here you can get to know a bit about my work an experience, check out some of my latest projects and get in touch with me. This webpage works for mobile and desktop viewports, so feel free to access it anywhere you prefer! 🧑‍💻📱
 
 ## Built With
 
-- HTML & CSS
+- HTML & CSS 🥽
 
-## Getting Started
+## Online version 
 
-To get a local copy up and running follow these simple steps.
+You can visit the webpage anytime here: https://rmrmrmr.github.io/
 
 ### Setup
 Clone this repository into your local environment and install HTML&CSS linters(https://github.com/microverseinc/linters-config)
@@ -19,15 +20,9 @@ Clone this repository into your local environment and install HTML&CSS linters(h
 
 👤 **Ricardo Martínez**
 
-- GitHub: [@githubhandle](https://github.com/rmrmrmr)
-- Twitter: [@twitterhandle](https://twitter.com/ricmtza)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ricardo-mart%C3%ADnez-002b8aa5/)
+- GitHub: [@rmrmrmr](https://github.com/rmrmrmr)
+- Twitter: [@ricmtza](https://twitter.com/ricmtza)
+- LinkedIn: [Ricardo Martínez](https://linkedin.com/in/)
 
 ## Show your support
 

@@ -54,7 +54,7 @@ body {
   align-items: center;
   width: 100vw;
   height: max-content;
-  background: url('Images/bgMain.png') no-repeat;
+  background: url('Images/bgMain.svg') no-repeat;
   background-size: 100%;
 }
 
@@ -79,6 +79,8 @@ body {
   height: max-content;
   margin: 0;
   color: #172b4d;
+  animation-name: load-rotate-lr;
+  animation-duration: 4s;
 }
 
 #primaryJob {
@@ -86,6 +88,8 @@ body {
   margin: 0;
   color: #36b37e;
   justify-self: flex-start;
+  animation-name: load-rotate-rl;
+  animation-duration: 2s;
 }
 
 #supportingText {
@@ -99,6 +103,8 @@ body {
   text-align: center;
   color: #172b4d;
   margin: 0;
+  animation-name: load-rotate-bt;
+  animation-duration: 2s;
 }
 
 #socialMediaIcons {
@@ -109,6 +115,8 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 58px;
+  animation-name: load-rotate-bt;
+  animation-duration: 2s;
 }
 
 ul {
@@ -251,6 +259,7 @@ ul {
 .seeProjectBttn:hover {
   cursor: pointer;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transform: scale(1.2);
 }
 
 .seeProjectBttn:active {
@@ -503,6 +512,7 @@ ul {
 #submitFormBttn:hover {
   cursor: pointer;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transform: scale(1.2);
 }
 
 #submitFormBttn:active {
@@ -550,6 +560,36 @@ ul {
 
 #smI2 {
   display: none;
+}
+
+@keyframes load-rotate-rl {
+  from {
+    transform: translate(100%, 0);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes load-rotate-lr {
+  from {
+    transform: translate(-100%, 0);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes load-rotate-bt {
+  from {
+    transform: translate(0, 900%);
+  }
+
+  to {
+    transform: rotate(0);
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -610,6 +650,10 @@ ul {
     margin-top: 0;
   }
 
+  .socialMediaIcons:hover {
+    transform: translate(0, -5px);
+  }
+
   #actionButtonPlaceholder {
     margin-top: 12vh;
   }
@@ -644,6 +688,10 @@ ul {
     width: 26.625vw;
   }
 
+  .card:hover {
+    transform: translate(0, -10px);
+  }
+
   #card1 {
     margin-top: 24px;
     height: 60vh;
@@ -660,7 +708,7 @@ ul {
     box-sizing: border-box;
     width: 26.625vw;
     height: 50%;
-    gap: 2.5vh;
+    gap: 2vh;
     padding: 1.77vh 0.76vw;
   }
 
@@ -692,7 +740,6 @@ ul {
     font-size: 1.18vw;
     line-height: 141%;
     width: 8.47vw;
-    margin-top: 1vh;
   }
 
   #aboutMePage {
@@ -729,15 +776,27 @@ ul {
     width: 25vw;
   }
 
+  #languagesCard:hover {
+    transform: translate(0, -10px);
+  }
+
   #frameworksCard {
     margin-top: 0;
     width: 25vw;
+  }
+
+  #frameworksCard:hover {
+    transform: translate(0, -10px);
   }
 
   #skillsCard {
     margin-top: 0;
     justify-self: start;
     width: 25vw;
+  }
+
+  #skillsCard:hover {
+    transform: translate(0, -10px);
   }
 
   .abtMeCardTitle {
@@ -778,7 +837,7 @@ ul {
     grid-row: 1/2;
     height: 28.44vh;
     width: 32.15vw;
-    font-size: 29px;
+    font-size: 2vw;
     align-self: flex-start;
     margin: 0;
     text-align: center;
@@ -815,21 +874,29 @@ ul {
 
   .formBox1 {
     box-sizing: content-box;
-    width: 47vw;
+    width: 46.5vw;
     height: min-content;
     border-color: #d0d9d4;
+    font-size: 1vw;
   }
 
   #commentsFormBox {
-    width: 47.5vw;
+    width: 47vw;
     height: 12.66vh;
+    min-height: 80px;
     box-sizing: border-box;
+    font-size: 1vw;
+  }
+
+  #commentsFormBox:focus {
+    outline-color: #60c095;
   }
 
   #submitFormBttn {
     align-self: flex-start;
-    height: min-content;
+    width: max-content;
     padding: 1.33vh;
+    font-size: 1.2vw;
   }
 
   #smI2 {

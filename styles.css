@@ -273,6 +273,7 @@ ul {
   height: max-content;
   display: grid;
   grid-template-columns: 1;
+  background: url('Images/aboutMeBottom.svg') 0% 19% no-repeat, url('Images/aboutMeTop.svg') 100% -2.8% no-repeat;
   justify-content: center;
 }
 
@@ -283,7 +284,6 @@ ul {
   grid-template-columns: 1 1;
   grid-template-rows: 48px 189px 96px;
   justify-content: center;
-  background: url('Images/illustration- about me- mobile1.png') 0% 100%, url('Images/illustration 1- about me-mobile22.png') 100% -15%;
   background-repeat: no-repeat;
 }
 
@@ -555,7 +555,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url('Images/illustration-contact-form1.png') 100% 56% no-repeat;
+  background: url('Images/bottomIlust.svg') 100% 56% no-repeat;
 }
 
 #smI2 {

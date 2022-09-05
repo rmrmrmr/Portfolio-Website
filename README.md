@@ -9,14 +9,13 @@ Here you can get to know a bit about my work an experience, check out some of my
 
 - HTML & CSS 🥽
 
-
 ## Online version 
 
 - You can visit the webpage anytime here: https://rmrmrmr.github.io/Portfolio-Website/
 
+## Setup
 
-### Setup
-Clone this repository into your local environment and install HTML&CSS linters(https://github.com/microverseinc/linters-config)
+- Clone this repository into your local environment and install linters for HTML & CSS (https://github.com/microverseinc/linters-config)
 
 ## Authors
 

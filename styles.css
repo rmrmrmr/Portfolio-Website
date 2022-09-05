@@ -54,7 +54,7 @@ body {
   align-items: center;
   width: 100vw;
   height: max-content;
-  background: url('Images/bgMain.png') no-repeat;
+  background: url('Images/bgMain.svg') no-repeat;
   background-size: 100%;
 }
 
@@ -706,7 +706,7 @@ ul {
     box-sizing: border-box;
     width: 26.625vw;
     height: 50%;
-    gap: 2.5vh;
+    gap: 2vh;
     padding: 1.77vh 0.76vw;
   }
 
@@ -738,7 +738,7 @@ ul {
     font-size: 1.18vw;
     line-height: 141%;
     width: 8.47vw;
-    margin-top: 1vh;
+    /* margin-top: 1vh; */
   }
 
   #aboutMePage {
@@ -836,7 +836,7 @@ ul {
     grid-row: 1/2;
     height: 28.44vh;
     width: 32.15vw;
-    font-size: 29px;
+    font-size: 2vw;
     align-self: flex-start;
     margin: 0;
     text-align: center;
@@ -873,21 +873,30 @@ ul {
 
   .formBox1 {
     box-sizing: content-box;
-    width: 47vw;
+    width: 46.5vw;
     height: min-content;
     border-color: #d0d9d4;
+    font-size: 1vw;
   }
 
   #commentsFormBox {
-    width: 47.5vw;
+    width: 47vw;
     height: 12.66vh;
+    min-height: 80px;
     box-sizing: border-box;
+    font-size: 1vw;
+  }
+
+  #commentsFormBox:focus {
+    outline-color: #60c095;
   }
 
   #submitFormBttn {
     align-self: flex-start;
-    height: min-content;
+    /* height: min-content; */
+    width: max-content;
     padding: 1.33vh;
+    font-size: 1.2vw;
   }
 
   #smI2 {

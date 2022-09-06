@@ -3,7 +3,7 @@
 # Portfolio Website 
 
 > Welcome to my Porfolio webpage.
-Here you can get to know a bit about my work an experience, check out some of my latest projects and get in touch with me. This webpage works for mobile and desktop viewports, so feel free to access it anywhere you prefer! 🧑‍💻📱
+Here you can get to know a bit about my work an experience, check out some of my latest projects and get in touch with me. This webpage works for mobile and desktop viewports (it also complies with accessibility norms), so feel free to access it anywhere you prefer! 🧑‍💻📱
 
 ## Built With
 

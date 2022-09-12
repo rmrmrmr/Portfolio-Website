@@ -23,7 +23,6 @@ body {
 #mobileMenu {
   display: none;
   height: 100vh;
-  /* display: flex; */
   flex-direction: column;
   justify-content: flex-start;
   background-color: #eaebf2;
@@ -36,7 +35,7 @@ body {
   flex-direction: column;
 }
 
-#xButtonImg{
+#xButtonImg {
   height: 14px;
   width: 14px;
   align-self: flex-end;
@@ -68,7 +67,7 @@ body {
 #bottomMobMenu {
   background-color: #eaebf2;
   height: 8vh;
-  justify-self:flex-end;
+  justify-self: flex-end;
 }
 
 #logoPlaceholder {

@@ -1,21 +1,19 @@
-//clickable items
-let menuBttn = document.querySelector('#headerButton');
-let xBttn = document.querySelector('#xButtonImg');
-let portfolioLink = document.getElementById('portfolioLink');
-let aboutLink = document.getElementById('abtMeLink');
-let contactLink = document.getElementById('contactLink');
+const menuBttn = document.querySelector('#headerButton');
+const xBttn = document.querySelector('#xButtonImg');
+const portfolioLink = document.getElementById('portfolioLink');
+const aboutLink = document.getElementById('abtMeLink');
+const contactLink = document.getElementById('contactLink');
 
-//items which css properties will be changed
-let mobMenu = document.querySelector('#mobileMenu');
-let mobToolbar =   document.getElementById('toolbar');
-let headline = document.getElementById('headline');
-let recentWorks = document.getElementById('recentWorks');
-let abtMe = document.getElementById('aboutMePage');
-let contact = document.getElementById('contact');
-let primName = document.getElementById('primaryName');
-let primJob = document.getElementById('primaryJob');
-let supText = document.getElementById('supportingText');
-let smIAnim = document.getElementById('socialMediaIcons');
+const mobMenu = document.querySelector('#mobileMenu');
+const mobToolbar = document.getElementById('toolbar');
+const headline = document.getElementById('headline');
+const recentWorks = document.getElementById('recentWorks');
+const abtMe = document.getElementById('aboutMePage');
+const contact = document.getElementById('contact');
+const primName = document.getElementById('primaryName');
+const primJob = document.getElementById('primaryJob');
+const supText = document.getElementById('supportingText');
+const smIAnim = document.getElementById('socialMediaIcons');
 
 function openMobMenu() {
   mobMenu.style.display = 'flex';

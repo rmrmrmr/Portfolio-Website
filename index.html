@@ -25,22 +25,35 @@
       <a href="index.html" id="contactNav" class="navLink">Contact</a>
     </nav>
   </header>
+  <section id="mobileMenu">
+    <div id="xButtonPH">
+      <input id="xButtonImg" type="image" src="Images/xButton.svg">
+    </div>
+    <nav id="mobMenuOptions">
+      <ul id="mobMenuList">
+        <li><a href="#recentWorks" class="mobMenuItem" id="portfolioLink">Portfolio</a></li>
+        <li><a href="#aboutMePage" class="mobMenuItem" id="abtMeLink">About</a></li>
+        <li><a href="#contact" class="mobMenuItem" id="contactLink">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="bottomMobMenu"></div>
+  </section>
   <section id="headline">
     <div class="primaryText" id="primaryText">
-        <h1 class="primaryText" id="primaryName">
+        <h1 class="primaryText lrAnim" id="primaryName">
           Hey there. I'm Ricardo
         </h1>
-        <h2 class="primaryText" id="primaryJob">
+        <h2 class="primaryText rlAnim" id="primaryJob">
           I'm a software developer
         </h2>
     </div>
-    <p id="supportingText">
+    <p id="supportingText" class="btAnim">
         I can help you build a product, feature or website.
         Look through some of my work and experience!
         If you like what you see and have a project you need coded,
         don’t hestiate to contact me.
     </p>
-    <ul id="socialMediaIcons">
+    <ul id="socialMediaIcons" class="btAnim">
         <li>
           <a href="https://twitter.com/ricmtza">
             <img class="socialMediaIcons" src="Images/twitter.svg" alt="Twitter">
@@ -458,6 +471,7 @@
         </ul>
       </div>
   </section>
+  <script src="script.js"></script>
 </body>
 
 </html>

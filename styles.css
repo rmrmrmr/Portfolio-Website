@@ -3,16 +3,73 @@
 
 body {
   margin: 0;
+  font-family: Inter, sans-serif;
 }
 
 #toolbar {
   position: relative;
   display: flex;
+  display: none;
   width: 100%;
   height: 48px;
   color: #181e25;
   justify-content: space-between;
   align-content: center;
+}
+
+#navDesktop {
+  display: none;
+}
+
+#mobileMenu {
+  display: none;
+  height: 100vh;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #eaebf2;
+}
+
+#xButtonPH {
+  background-color: #fff;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#xButtonImg{
+  height: 14px;
+  width: 14px;
+  align-self: flex-end;
+  margin: 33px;
+  background-color: #fff;
+}
+
+#mobMenuList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 28px;
+}
+
+#mobMenuOptions {
+  flex-grow: 1;
+  border-radius: 0 0 20px 20px;
+  background-color: #fff;
+}
+
+.mobMenuItem {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+  text-decoration: none;
+}
+
+#bottomMobMenu {
+  background-color: #eaebf2;
+  height: 8vh;
+  justify-self:flex-end;
 }
 
 #logoPlaceholder {
@@ -37,10 +94,6 @@ body {
 
 #headerButton {
   margin-left: 24px;
-}
-
-#navDesktop {
-  display: none;
 }
 
 #itemNav {

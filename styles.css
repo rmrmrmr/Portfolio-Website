@@ -130,6 +130,9 @@ body {
   height: max-content;
   margin: 0;
   color: #172b4d;
+}
+
+.lrAnim {
   animation-name: load-rotate-lr;
   animation-duration: 4s;
 }
@@ -139,6 +142,9 @@ body {
   margin: 0;
   color: #36b37e;
   justify-self: flex-start;
+}
+
+.rlAnim {
   animation-name: load-rotate-rl;
   animation-duration: 2s;
 }
@@ -154,8 +160,6 @@ body {
   text-align: center;
   color: #172b4d;
   margin: 0;
-  animation-name: load-rotate-bt;
-  animation-duration: 2s;
 }
 
 #socialMediaIcons {
@@ -166,6 +170,9 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 58px;
+}
+
+.btAnim {
   animation-name: load-rotate-bt;
   animation-duration: 2s;
 }

@@ -12,6 +12,10 @@ let headline = document.getElementById('headline');
 let recentWorks = document.getElementById('recentWorks');
 let abtMe = document.getElementById('aboutMePage');
 let contact = document.getElementById('contact');
+let primName = document.getElementById('primaryName');
+let primJob = document.getElementById('primaryJob');
+let supText = document.getElementById('supportingText');
+let smIAnim = document.getElementById('socialMediaIcons');
 
 function openMobMenu() {
   mobMenu.style.display = 'flex';
@@ -20,6 +24,10 @@ function openMobMenu() {
   recentWorks.style.display = 'none';
   abtMe.style.display = 'none';
   contact.style.display = 'none';
+  primName.classList.remove('lrAnim');
+  primJob.classList.remove('rlAnim');
+  supText.classList.remove('btAnim');
+  smIAnim.classList.remove('btAnim');
 }
 
 function closeMobMenu() {

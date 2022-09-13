@@ -50,4 +50,4 @@ xBttn.addEventListener('click', closeMobMenu);
 portfolioLink.addEventListener('click', closeMobMenu);
 aboutLink.addEventListener('click', closeMobMenu);
 contactLink.addEventListener('click', closeMobMenu);
-window.addEventListener('resize', hideMobMenu);
+window.addEventListener('resize', hideMobMenu); 

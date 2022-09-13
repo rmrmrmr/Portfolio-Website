@@ -37,8 +37,18 @@ function closeMobMenu() {
   contact.style.display = 'flex';
 }
 
+function hideMobMenu() {
+  if(window.innerWidth > 768) {
+    mobToolbar.style.display = 'none';
+  }else{
+    mobToolbar.style.display = 'flex';
+  }
+}
+
 menuBttn.addEventListener('click', openMobMenu);
 xBttn.addEventListener('click', closeMobMenu);
 portfolioLink.addEventListener('click', closeMobMenu);
 aboutLink.addEventListener('click', closeMobMenu);
 contactLink.addEventListener('click', closeMobMenu);
+window.addEventListener('resize', hideMobMenu);
+

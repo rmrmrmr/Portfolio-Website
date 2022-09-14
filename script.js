@@ -13,12 +13,12 @@ const primName = document.getElementById('primaryName');
 const primJob = document.getElementById('primaryJob');
 const supText = document.getElementById('supportingText');
 const smIAnim = document.getElementById('socialMediaIcons');
-const button1 = document.getElementById('card1');
-const button2 = document.getElementById('card2');
-const button3 = document.getElementById('card3');
-const button4 = document.getElementById('card4');
-const button5 = document.getElementById('card5');
-const button6 = document.getElementById('card6');
+const button1 = document.getElementById('bttn1');
+const button2 = document.getElementById('bttn2');
+const button3 = document.getElementById('bttn3');
+const button4 = document.getElementById('bttn4');
+const button5 = document.getElementById('bttn5');
+const button6 = document.getElementById('bttn6');
 const projectsInfo = [
   {
     id: 'card1',

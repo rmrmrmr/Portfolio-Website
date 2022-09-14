@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Portfolio Homepage</title>
 </head>
@@ -25,19 +26,6 @@
       <a href="index.html" id="contactNav" class="navLink">Contact</a>
     </nav>
   </header>
-  <section id="mobileMenu">
-    <div id="xButtonPH">
-      <input id="xButtonImg" type="image" src="Images/xButton.svg">
-    </div>
-    <nav id="mobMenuOptions">
-      <ul id="mobMenuList">
-        <li><a href="#recentWorks" class="mobMenuItem" id="portfolioLink">Portfolio</a></li>
-        <li><a href="#aboutMePage" class="mobMenuItem" id="abtMeLink">About</a></li>
-        <li><a href="#contact" class="mobMenuItem" id="contactLink">Contact</a></li>
-      </ul>
-    </nav>
-    <div id="bottomMobMenu"></div>
-  </section>
   <section id="headline">
     <div class="primaryText" id="primaryText">
         <h1 class="primaryText lrAnim" id="primaryName">
@@ -115,7 +103,7 @@
             </a>
           </li>
         </ul>
-        <a class="seeProjectBttn" href="https://github.com/rmrmrmr">
+        <a class="seeProjectBttn" id="bttn1">
           See project
         </a>
       </div>
@@ -148,7 +136,7 @@
             </a>
           </li>
         </ul>
-          <a class="seeProjectBttn" href="https://github.com/rmrmrmr">
+          <a class="seeProjectBttn" id="bttn2">
             See Project
           </a>
       </div>
@@ -179,7 +167,7 @@
             </a>
           </li>
         </ul>
-          <a class="seeProjectBttn" href="https://github.com/rmrmrmr">
+          <a class="seeProjectBttn" id="bttn3">
             See Project
           </a>
       </div>
@@ -212,7 +200,7 @@
             </a>
           </li>
         </ul>
-          <a class="seeProjectBttn" href="https://github.com/rmrmrmr">
+          <a class="seeProjectBttn" id="bttn4">
             See Project
           </a>
       </div>
@@ -245,7 +233,7 @@
             </a>
           </li>
         </ul>
-          <a class="seeProjectBttn" href="https://github.com/rmrmrmr">
+          <a class="seeProjectBttn" id="bttn5">
             See Project
           </a>
       </div>
@@ -278,7 +266,7 @@
             </a>
           </li>
         </ul>
-          <a class="seeProjectBttn" href="https://github.com/rmrmrmr">
+          <a class="seeProjectBttn" id="bttn6">
             See Project
           </a>
       </div>
@@ -470,6 +458,20 @@
           </li>
         </ul>
       </div>
+  </section>
+  <section id="mobileMenu">
+    <h2 id="mobMenuHeading">Mobile Menu</h2>
+    <div id="xButtonPH">
+      <input id="xButtonImg" type="image" src="Images/xButton.svg" alt="CloseMenu">
+    </div>
+    <nav id="mobMenuOptions">
+      <ul id="mobMenuList">
+        <li><a href="#recentWorks" class="mobMenuItem" id="portfolioLink">Portfolio</a></li>
+        <li><a href="#aboutMePage" class="mobMenuItem" id="abtMeLink">About</a></li>
+        <li><a href="#contact" class="mobMenuItem" id="contactLink">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="bottomMobMenu"></div>
   </section>
   <script src="script.js"></script>
 </body>

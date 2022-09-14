@@ -342,6 +342,7 @@ ul {
   padding: 16px;
   border: 1px solid #dFe1e6;
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 12px;
   align-items: flex-start;
@@ -351,6 +352,19 @@ ul {
   width: 311px;
   height: 220px;
   border-radius: 8px;
+}
+
+#mobPopupXBttn {
+  height: 32px;
+  width: 32px;
+  display: ;
+  z-index: 100;
+  margin: 0;
+  padding: 0px;
+  position: absolute;
+  justify-self: center;
+  top: 27px;
+  right: 25px;
 }
 
 #mobilePopupTitle {

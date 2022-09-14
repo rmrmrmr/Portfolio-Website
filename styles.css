@@ -326,7 +326,7 @@ ul {
 
 #mobileProjectPopupBG {
   background-color: #c1c7d0;
-  display: none;
+  display: flex;
   height: 882px;
   width: 100vw;
   justify-self: center;
@@ -752,7 +752,7 @@ width: 17.985200881958008px;
   display: none;
 }
 
-@keyframes load-rotate-rl {
+/* @keyframes load-rotate-rl {
   from {
     transform: translate(100%, 0);
   }
@@ -780,7 +780,7 @@ width: 17.985200881958008px;
   to {
     transform: rotate(0);
   }
-}
+} */
 
 @media all and (min-width: 768px) {
   #toolbar {

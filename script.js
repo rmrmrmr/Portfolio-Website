@@ -88,6 +88,14 @@ const projectsInfo = [
   }
 ]
 
+function hideMobMenu() {
+  if (window.innerWidth > 768) {
+    mobToolbar.style.display = 'none';
+  } else {
+    mobToolbar.style.display = 'flex';
+  }
+}
+
 function openMobMenu() {
   mobMenu.style.display = 'flex';
   mobToolbar.style.display = 'none';
@@ -108,14 +116,6 @@ function closeMobMenu() {
   recentWorks.style.display = 'grid';
   abtMe.style.display = 'grid';
   contact.style.display = 'flex';
-}
-
-function hideMobMenu() {
-  if (window.innerWidth > 768) {
-    mobToolbar.style.display = 'none';
-  } else {
-    mobToolbar.style.display = 'flex';
-  }
 }
 
 function openPopupMobWindow(bttnId) {
@@ -217,7 +217,9 @@ function openPopupMobWindow(bttnId) {
     abtMe.style.display = 'grid';
     contact.style.display = 'flex';
     popupBg.remove();
+    hideMobMenu();
   }
+
   mobPopupXBttn.addEventListener('click', closePopupWindow);
 }
 
@@ -226,6 +228,7 @@ xBttn.addEventListener('click', closeMobMenu);
 portfolioLink.addEventListener('click', closeMobMenu);
 aboutLink.addEventListener('click', closeMobMenu);
 contactLink.addEventListener('click', closeMobMenu);
+window.addEventListener('resize', hideMobMenu);
 button1.addEventListener('click', function () { openPopupMobWindow(button1.id); });
 button2.addEventListener('click', function () { openPopupMobWindow(button2.id); });
 button3.addEventListener('click', function () { openPopupMobWindow(button3.id); });

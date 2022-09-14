@@ -334,7 +334,7 @@ ul {
   align-items: center;
 }
 
-#mobileProjectPopup {
+#mobileProjectPopup { 
   height: 836px;
   width: 343px;
   border-radius: 16px;
@@ -357,7 +357,6 @@ ul {
 #mobPopupXBttn {
   height: 32px;
   width: 32px;
-  display: ;
   z-index: 100;
   margin: 0;
   padding: 0px;
@@ -890,6 +889,7 @@ width: 17.985200881958008px;
   .card {
     height: 60vh;
     width: 26.625vw;
+    box-sizing: content-box;
   }
 
   .card:hover {

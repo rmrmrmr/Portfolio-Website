@@ -471,6 +471,10 @@ height: 20px;
 width: 17.985200881958008px;
 }
 
+#desktopPopupPH {
+  display: none;
+}
+
 #aboutMePage {
   position: relative;
   width: 100%;
@@ -944,6 +948,146 @@ width: 17.985200881958008px;
     width: 8.47vw;
   }
 
+  #desktopPopupPH {
+    display: block;
+  }
+
+  #desktopPopup {
+    border-radius: 8px;
+    position: fixed;
+    width: 63.88vw;
+    height: 95vh;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  #deskXBttnPH {
+    width: 100%;
+    height: 3.69%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.29vh;
+  }
+
+  #desktopXBttn {
+    height: 100%;
+  }
+
+  #desktopSnsh {
+    height: 55.87%;
+    width: 100%;
+    object-fit: fill;
+    margin-bottom: 2.21vh;
+  }
+
+  #desktopProjectTitlePH {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.84vh;
+  }
+
+  #desktopProjectName {
+    width: 67.7%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 138%;
+    color: #172b4d;
+    margin: 0;
+  }
+
+  #desktopPopupButtonsPH {
+    display: flex;
+    gap: 12px;
+    justify-items: flex-end;
+  }
+
+  #desktopSeeLiveBttn {
+    height: 48px;
+    width: 115px;
+    border-radius: 8px;
+    padding: 12px;
+    background: #36b37f;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    color: white;
+    align-items: center;
+  }
+
+  #seeLiveTextDesktop {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 133%;
+    margin: 0;
+  }
+
+  #desktopSeeSourceBttn {
+    height: 48px;
+    width: 141px;
+    border-radius: 8px;
+    padding: 12px;
+    gap: 10px;
+    align-items: center;
+    background: #36b37f;
+    color: white;
+    text-decoration: none;
+    display: flex;
+
+  }
+
+  #seeSourceTextDesktop {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 133%;
+    margin: 0;
+    width: max-content;
+  }
+
+  #desktopPopupTechPH {
+    display: flex;
+    gap: 8px;
+    height: 32px;
+    margin-bottom: 2.6vh;
+  }
+
+  .desktopPopupTech {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 133%;
+    color: #344563;
+    background-color: #ebecf0;
+    border-radius: 8px;
+    padding: 8px 12px;
+  }
+
+  #desktopPopupInfoText {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #344563;
+    text-align: left;
+  }
+
+  #modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(193, 199, 208, .9);
+    z-index: 95;
+  }
+
   #aboutMePage {
     box-sizing: content-box;
     padding-top: 21.33vh;
@@ -979,7 +1123,7 @@ width: 17.985200881958008px;
   }
 
   #languagesCard:hover {
-    transform: translate(0, -10px);
+    transform: translate(0, -40px);
   }
 
   #frameworksCard {
@@ -988,7 +1132,7 @@ width: 17.985200881958008px;
   }
 
   #frameworksCard:hover {
-    transform: translate(0, -10px);
+    transform: translate(0, -40px);
   }
 
   #skillsCard {
@@ -998,7 +1142,7 @@ width: 17.985200881958008px;
   }
 
   #skillsCard:hover {
-    transform: translate(0, -10px);
+    transform: translate(0, -40px);
   }
 
   .abtMeCardTitle {

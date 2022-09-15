@@ -694,6 +694,29 @@ ul {
   color: #6b778c;
 }
 
+#emailError {
+  color: #ef5867;
+  height: 17px;
+  font-size: 10px;
+  visibility: hidden;
+}
+
+.mailFormBox {
+  width: 100%;
+}
+
+.mailFormBoxError {
+  width: 100%;
+  border: solid #cb5662;
+  border-width: 1.7px;
+}
+
+.validFormInput {
+  width: 100%;
+  border: solid #04f086;
+  border-width: 1.7px;
+}
+
 #commentsFormBox {
   height: 200px;
   width: 327px;
@@ -1227,6 +1250,18 @@ ul {
     height: min-content;
     border-color: #d0d9d4;
     font-size: 1vw;
+  }
+
+  .mailFormBoxError {
+    width: 100%;
+    border: solid #cb5662;
+    border-width: 1.7px;
+  }
+
+  .validFormInput {
+    width: 100%;
+    border: solid green;
+    border-width: 1.7px;
   }
 
   #commentsFormBox {

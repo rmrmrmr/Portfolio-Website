@@ -19,6 +19,9 @@ const button3 = document.getElementById('bttn3');
 const button4 = document.getElementById('bttn4');
 const button5 = document.getElementById('bttn5');
 const button6 = document.getElementById('bttn6');
+const contactForm = document.getElementById('contactForm');
+const emailError = document.getElementById('emailError');
+
 const projectsInfo = [
   {
     id: 'bttn1',
@@ -373,6 +376,25 @@ function openPopupMobWindow(bttnId) {
   }
 }
 
+contactForm.addEventListener('submit', (ev) => {
+  const clientEmail = contactForm[1].value;
+  const client = clientEmail.toLowerCase();
+
+  if (client !== clientEmail) {
+    contactForm[1].classList.remove('mailFormBox');
+    contactForm[1].classList.add('mailFormBoxError');
+    emailError.style.visibility = 'visible';
+    ev.preventDefault();
+  } else if (client === clientEmail) {
+    contactForm[1].classList.add('mailFormBoxError');
+    contactForm[1].classList.remove('mailFormBox');
+    contactForm[0].classList.add('validFormInput');
+    contactForm[1].classList.add('validFormInput');
+    contactForm[2].classList.add('validFormInput');
+    emailError.style.visibility = 'hidden';
+  }
+});
+
 menuBttn.addEventListener('click', openMobMenu);
 xBttn.addEventListener('click', closeMobMenu);
 portfolioLink.addEventListener('click', closeMobMenu);
@@ -385,3 +407,4 @@ button3.addEventListener('click', () => { openPopupMobWindow(button3.id); });
 button4.addEventListener('click', () => { openPopupMobWindow(button4.id); });
 button5.addEventListener('click', () => { openPopupMobWindow(button5.id); });
 button6.addEventListener('click', () => { openPopupMobWindow(button6.id); });
+// contactForm.addEventListener('submit', emailLowerCase);

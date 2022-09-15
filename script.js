@@ -20,7 +20,6 @@ const button4 = document.getElementById('bttn4');
 const button5 = document.getElementById('bttn5');
 const button6 = document.getElementById('bttn6');
 const contactForm = document.getElementById('contactForm');
-const emailInput = document.getElementById('contactForm');
 const emailError = document.getElementById('emailError');
 
 const projectsInfo = [
@@ -377,18 +376,16 @@ function openPopupMobWindow(bttnId) {
   }
 }
 
-contactForm.addEventListener('submit', function (ev) {
-  let clientEmail = contactForm[1].value;
-  let client = clientEmail.toLowerCase();
+contactForm.addEventListener('submit', (ev) => {
+  const clientEmail = contactForm[1].value;
+  const client = clientEmail.toLowerCase();
 
-  if (client !== clientEmail){
+  if (client !== clientEmail) {
     contactForm[1].classList.remove('mailFormBox');
     contactForm[1].classList.add('mailFormBoxError');
-    console
     emailError.style.visibility = 'visible';
-    ev.preventDefault(); 
-  }
-  else if (client === clientEmail) {
+    ev.preventDefault();
+  } else if (client === clientEmail) {
     contactForm[1].classList.add('mailFormBoxError');
     contactForm[1].classList.remove('mailFormBox');
     contactForm[0].classList.add('validFormInput');

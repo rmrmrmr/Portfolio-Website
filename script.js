@@ -435,9 +435,9 @@ window.addEventListener('load', () => {
     newName.savedName = 'Enter Name';
   }
   savedName.value = newName.savedName;
-  // if ((newEmail.savedEmail === 'undefined') === true) {
-  //   newEmail.savedEmail = 'Enter email';
-  // }
+  if ((newEmail.savedEmail === 'undefined') === true) {
+    newEmail.savedEmail = 'Enter email';
+  }
   savedEmail.value = newEmail.savedEmail;
 
   if ((newMessage.savedComment === 'undefined') === true) {

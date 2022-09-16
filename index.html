@@ -388,12 +388,12 @@
     <div id="contactMeBlankSpace"></div>
     <div id="bottomBackgroundImage">
       <form id="contactForm" action="https://formspree.io/f/moqbvdgn" method="post">
-        <input type="text" name="name" id="nameFormBox" class="formBox1" placeholder="Full Name" maxlength="30" required>
+        <input type="text" name="name" id="nameFormBox" class="formBox1 dataStor" placeholder="Full Name" maxlength="30" required>
         <div class="formBox1">
-        <input type="email" id="emailInput" name="email" class="formBox1 mailFormBox" placeholder="Email Adress" required>
+        <input type="email" id="emailInput" name="email" class="formBox1 mailFormBox dataStor" placeholder="Email Adress" required>
         <small id="emailError">email should be in lower case</small>
         </div>
-        <textarea name="comments" id="commentsFormBox" class="formBox1"
+        <textarea name="comments" id="commentsFormBox" class="formBox1 dataStor"
           maxlength="500" required>Type something</textarea>
         <button type="submit" id="submitFormBttn">Get in touch</button>
       </form>

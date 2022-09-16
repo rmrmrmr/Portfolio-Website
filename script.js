@@ -407,4 +407,3 @@ button3.addEventListener('click', () => { openPopupMobWindow(button3.id); });
 button4.addEventListener('click', () => { openPopupMobWindow(button4.id); });
 button5.addEventListener('click', () => { openPopupMobWindow(button5.id); });
 button6.addEventListener('click', () => { openPopupMobWindow(button6.id); });
-// contactForm.addEventListener('submit', emailLowerCase);

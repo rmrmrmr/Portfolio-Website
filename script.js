@@ -407,3 +407,41 @@ button3.addEventListener('click', () => { openPopupMobWindow(button3.id); });
 button4.addEventListener('click', () => { openPopupMobWindow(button4.id); });
 button5.addEventListener('click', () => { openPopupMobWindow(button5.id); });
 button6.addEventListener('click', () => { openPopupMobWindow(button6.id); });
+
+const local = document.querySelectorAll('.dataStor');
+for (let i = 0; i < local.length; i += 1) {
+  local[i].addEventListener('keydown', () => {
+    const savedName = contactForm[0].value;
+    const savedEmail = contactForm[1].value;
+    const savedComment = contactForm[2].value;
+    const userInputData = {
+      savedName,
+      savedEmail,
+      savedComment,
+    };
+    const savedData = JSON.stringify(userInputData);
+    localStorage.setItem('allData', savedData);
+  });
+}
+
+window.addEventListener('load', () => {
+  const savedName = contactForm[0];
+  const savedEmail = contactForm[1];
+  const savedComment = contactForm[2];
+  const newName = JSON.parse(localStorage.getItem('allData'));
+  const newEmail = JSON.parse(localStorage.getItem('allData'));
+  const newMessage = JSON.parse(localStorage.getItem('allData'));
+  if ((newName.savedName === undefined) === true) {
+    newName.savedName = 'Enter Name';
+  }
+  savedName.value = newName.savedName;
+  if ((newEmail.savedEmail === 'undefined') === true) {
+    newEmail.savedEmail = 'Enter email';
+  }
+  savedEmail.value = newEmail.savedEmail;
+
+  if ((newMessage.savedComment === 'undefined') === true) {
+    newMessage.savedComment = 'Type comments';
+  }
+  savedComment.value = newMessage.savedComment;
+});

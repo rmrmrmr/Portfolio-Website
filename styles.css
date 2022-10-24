@@ -798,7 +798,7 @@ ul {
   display: none;
 }
 
-/* @keyframes load-rotate-rl {
+ @keyframes load-rotate-rl {
   from {
     transform: translate(100%, 0);
   }
@@ -826,7 +826,7 @@ ul {
   to {
     transform: rotate(0);
   }
-} */
+} 
 
 @media all and (min-width: 768px) {
   #toolbar {
